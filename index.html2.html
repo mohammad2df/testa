@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بخش بندی صفحه با رنگهای متفاوت</title>
+    <style>
+        /* استایل برای هدر */
+        header {
+            background-color: #87CEFA; /* آبی آسمانی روشن */
+            color:#FFFFFF;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            font-family: Arial, sans-serif;
+			 font-weight: bold;
+           
+        }
+
+        /* استایل برای بخش اصلی (main) */
+        main {
+            background-color: #F5F5F5; /* طوسی روشن */
+            color: #333333;
+            padding: 20px;
+			margin-left: 15%;
+            text-align: justify;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+			text-align: center;
+			 font-weight: bold;
+			
+        }
+
+        /* استایل برای بخش جانبی (aside) */
+        aside {
+            background-color:#FFEA00; /* زرد روشن */
+            color: #333333;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+			font-weight: bold;
+        }
+
+        /* استایل برای فوتر */
+        footer {
+            background-color: #1C3D5A; /* آبی تیره */
+            color: #D3D3D3;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* چیدمان کلی صفحه */
+		chideman{
+			display: flex;
+			
+		}					    
+        aside {
+            width: 30%;
+            order: 40;
+        }
+        main {
+            width: 70%;
+            order: 1;
+			background-color: darkgray
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Smart amoz
+</header>
+
+  
+<!-- برا متن ها  -->
+
+    <main>	
+این بخش اصلی صفحه است
+		
+    </main>
+    <aside>
+         (aside)
+    </aside>
+
+
+<footer>
+    فوتر: اینجا فوتر صفحه است
+</footer>
+
+</body>
+</html>
