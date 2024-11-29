@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طرح HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="SD.css" rel="stylesheet" type="text/css">
+    <style>
+        /* استایل برای main */
+        main {
+            display: flex; /* نمایش محتوای main به صورت سطری */
+            flex-wrap: wrap; /* محتوای اضافی به خطوط جدید برود */
+            gap: 15px; /* فاصله بین بلوک‌ها */
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* استایل برای aside */
+        aside {
+            flex: 1; /* اشغال یک بخش از فضا */
+            min-width: 200px; /* حداقل عرض */
+            max-width: 300px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* استایل برای بلوک‌های داخل main */
+        .main-item {
+            flex: 2; /* اشغال دو بخش از فضا */
+            min-width: 200px; /* حداقل عرض برای هر بلوک */
+            max-width: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* استایل برای بخش هدر */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* استایل برای فوتر */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>این قسمت هدر من است</h1>
+    </header>
+    <main>
+        <!-- aside در سمت چپ -->
+        <aside>
+            <h3>بخش جانبی</h3>
+            <p>این یک متن در بخش جانبی است. می‌توانید لینک‌ها یا اطلاعات اضافی اینجا قرار دهید.</p>
+        </aside>
+        <!-- محتوای جدید در main -->
+        <div class="main-item">آیتم ۱</div>
+        <div class="main-item">آیتم ۲</div>
+        <div class="main-item">آیتم ۳</div>
+        <div class="main-item">آیتم ۴</div>
+    </main>
+    <footer>
+        <p>این قسمت فوتر من است</p>
+    </footer>
+</body>
+</html>
+
+
